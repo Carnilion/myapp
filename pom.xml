@@ -54,7 +54,9 @@
 
 
         </plugins>
-        <finalName>Word_Counter_New</finalName>
+
+<!--        changing a jar file name-->
+        <finalName>myapp</finalName>
     </build>
 
     <properties>
@@ -64,6 +66,14 @@
     </properties>
 
     <dependencies>
+
+<!--        selenium-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+<!--            <scope>provided</scope>-->
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -96,14 +106,36 @@
             <version>2.8.5</version>
         </dependency>
 
+<!--        json file-->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20190722</version>
         </dependency>
 
+<!--        cucumber and gherkin-->
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test-autoconfigure</artifactId>
+            <version>2.2.6.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
+
+<!--    spring framework-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
