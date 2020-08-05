@@ -1,6 +1,10 @@
 Feature: test app
 
   Scenario: write and print some text
-    Given prepare text
+#    Given prepare text
     When write text
-    Then get printed text
+#    Then prepare text
+#      | person | number |
+#      | wujek  | 333    |
+#      | ciocia | 444    |
+
